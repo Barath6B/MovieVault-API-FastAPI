@@ -153,15 +153,14 @@ title: "Interstellar"
 }
 ```
 
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/e4207fb0-9d38-4556-a246-f4d0264ab845" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/8102fccc-b834-4b93-9555-7b81df114d1b" />
 
 
 Response:
 
 Movie added at ID 10
 
-
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/c641bbbf-f8f7-424e-ab2b-19a1e6cd84ba" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/3669c13d-eab2-43fd-8fa2-421845bdd4bd" />
 
 
 2️⃣ Get Movie by ID
