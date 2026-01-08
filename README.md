@@ -37,7 +37,7 @@ MovieVault solves this by offering:
 ### ✍️ Design Decisions
 Database Schema: 
 ```
-table *movielist* = {
+table movielist = {
 id: Integer , Primiary_Key = True,
 title: String,
 media_type: String,
