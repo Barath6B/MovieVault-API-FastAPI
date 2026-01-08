@@ -21,7 +21,7 @@ The application manages a media list (movies / TV shows) with full CRUD function
 ### Testing & Tools
 ![Pytest](https://img.shields.io/badge/Pytest-Testing-brightgreen)
 
-## 📌 Problem Understanding
+### 📌 Problem Understanding
 Managing movie data often requires:
  - Structured storage of movie details
  - Efficient retrieval by ID or category
@@ -34,7 +34,7 @@ MovieVault solves this by offering:
  - CRUD operations are exposed through REST endpoints
  - Proper separation of concerns between frontend and backend
 
-## ✍️ Design Decisions
+### ✍️ Design Decisions
 Database Schema: 
 ```
 table *movielist* = {
@@ -139,15 +139,22 @@ Backend url : ```http://localhost:8000```
 - Endpoint: /movies
 - Body: application/json
 Request:
-<img width="1919" height="1077" alt="image" src="https://github.com/user-attachments/assets/e829edc8-6ee8-47ab-9cc5-29299b725ab6" />
+
 ```
 {
 title: "Interstellar"
 }
 ```
+
+<img width="1919" height="1077" alt="image" src="https://github.com/user-attachments/assets/e829edc8-6ee8-47ab-9cc5-29299b725ab6" />
+
 Response:
+
 Movie added at ID 10
+
+
 <img width="1334" height="960" alt="image" src="https://github.com/user-attachments/assets/53963570-43c8-4e0f-abe8-7f857eccde95" />
+
 
 2️⃣ Get Movie by ID
 
@@ -164,6 +171,34 @@ Movie added at ID 10
 
  - Method: DELETE
  - Endpoint: /movies/{id}
+
+### 🧪 Testing
+
+🧰 Framework:
+ - Tests implemented using Pytest and FastAPI TestClient
+
+✅ Endpoint Coverage:
+ - Verified successful movie retrieval using valid movie IDs
+
+❌ Negative Scenarios:
+ - Tested non-existent movie IDs to ensure proper 404 Not Found responses
+
+📦 Response Validation:
+ - Ensured API responses strictly follow the expected response schema
+
+🔢 Data Type Checks:
+ - Validated field types (id, title, year, rating, media_type) for data integrity
+
+🔁 Multiple Records:
+ - Parameterized tests used to validate multiple movie IDs efficiently
+
+🧪 Unit Tests:
+ - Implemented 6 unit test cases covering success paths, error handling, schema validation, and edge cases
+
+To Run Test in root Library
+```
+pytest
+```
 
 
 
