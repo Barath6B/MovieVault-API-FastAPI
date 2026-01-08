@@ -125,7 +125,13 @@ python -m venv minenv
 source minenv/bin/activate   # Windows: minenv\Scripts\activate
 pip install -r requirements.txt
 ```
+
+API key is free in OMDb webpage
+
+``` https://www.omdbapi.com/apikey.aspx ```
+
 Create a .env file in the project root.
+
 ```
 EXTERNAL_API_KEY=your_api_key_here
 ```
@@ -207,6 +213,17 @@ To Run Test in root Library
 ```
 pytest
 ```
+
+📌 Notes
+The application runs locally on localhost
+The external movie API requires a valid API key.The API key is not included in this repository for security reasons.
+Environment variables are used for sensitive configurations
+
+
+### 👤 Author
+
+Barath B
+💻
 
 
 
