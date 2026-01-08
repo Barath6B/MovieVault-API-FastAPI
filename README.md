@@ -1,6 +1,7 @@
-## 🎬 MovieVault
+### 🎬 MovieVault
 
-**Project OverView**
+## Project Overview 
+
 MovieVault is a full-stack movie management application built as part of a technical assessment.It provides a simple and structured way to store, retrieve, and manage movie information using a modern backend API and a responsive frontend interface.The project focuses on clean architecture, API design, and frontend–backend integration, following real-world development practices.
 The application manages a media list (movies / TV shows) with full CRUD functionality and proper validation.
 
