@@ -1,4 +1,4 @@
-#🎬 MovieVault
+## 🎬 MovieVault
 
 **Project OverView**
 MovieVault is a full-stack movie management application built as part of a technical assessment.It provides a simple and structured way to store, retrieve, and manage movie information using a modern backend API and a responsive frontend interface.The project focuses on clean architecture, API design, and frontend–backend integration, following real-world development practices.
@@ -21,7 +21,7 @@ The application manages a media list (movies / TV shows) with full CRUD function
 ### Testing & Tools
 ![Pytest](https://img.shields.io/badge/Pytest-Testing-brightgreen)
 
-**📌 Problem Understanding**
+## 📌 Problem Understanding
 Managing movie data often requires:
  - Structured storage of movie details
  - Efficient retrieval by ID or category
@@ -34,7 +34,7 @@ MovieVault solves this by offering:
  - CRUD operations are exposed through REST endpoints
  - Proper separation of concerns between frontend and backend
 
-**✍️ Design Decisions**
+## ✍️ Design Decisions
 Database Schema: 
 ```
 table *movielist* = {
