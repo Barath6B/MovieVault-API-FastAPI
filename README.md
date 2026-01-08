@@ -150,7 +150,7 @@ Backend url : ```http://localhost:8000```
 ## 1️⃣ Create Movie
 
 - Method: POST
-- Endpoint: /movies
+- Endpoint: /movielist
 - Body: application/json
 Request:
 
@@ -174,18 +174,18 @@ Movie added at ID 10
 2️⃣ Get Movie by ID
 
  - Method: GET
- - Endpoint: /movies/{id}
+ - Endpoint: /movielist/{id}
 
 3️⃣ Update Movie
 
  - Method: PUT
- - Endpoint: /movies/{id}
+ - Endpoint: /movielist/{id}
  - Body: application/json
 
 4️⃣ Delete Movie
 
  - Method: DELETE
- - Endpoint: /movies/{id}
+ - Endpoint: /movielist/{id}
 
 ### 🧪 Testing
 
