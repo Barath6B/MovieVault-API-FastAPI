@@ -104,6 +104,9 @@ This approach ensures invalid or inconsistent data never reaches the database.
 
 ## 🔧 Setup
 Frontend React
+
+Move to frontend folder
+
 ```cd frontend```
 
 installation of package
