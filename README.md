@@ -1,6 +1,7 @@
-This project is a FastAPI-based REST API built as part of a backend assessment.
-The goal was to design a clean, well-validated API that interacts with a database, integrates external data, and is fully tested.
+**🎬 MovieVault**
 
+**Project OverView**
+MovieVault is a full-stack movie management application built as part of a technical assessment.It provides a simple and structured way to store, retrieve, and manage movie information using a modern backend API and a responsive frontend interface.The project focuses on clean architecture, API design, and frontend–backend integration, following real-world development practices.
 The application manages a media list (movies / TV shows) with full CRUD functionality and proper validation.
 
 ## 🛠 Tech Stack
@@ -19,4 +20,51 @@ The application manages a media list (movies / TV shows) with full CRUD function
 
 ### Testing & Tools
 ![Pytest](https://img.shields.io/badge/Pytest-Testing-brightgreen)
+
+**📌 Problem Understanding**
+Managing movie data often requires:
+ - Structured storage of movie details
+ - Efficient retrieval by ID or category
+ - Clean and predictable API responses
+ - A user-friendly interface for interaction
+   
+MovieVault solves this by offering:
+ - A RESTful backend API to handle movie data
+ - A frontend interface to interact with the External API
+ - CRUD operations are exposed through REST endpoints
+ - Proper separation of concerns between frontend and backend
+
+**✍️ Design Decisions**
+Database Schema: 
+table *movielist* = {
+id: Integer , Primiary_Key = True,
+title: String,
+media_type: String,
+year: Integer,
+rating: Float
+}
+
+📂 Project Structure
+
+MovieVault/
+│
+├── app/
+│   ├── main.py
+│   ├── database.py
+│   ├── models.py
+│   ├── schemas.py
+│   ├── routes.py
+│
+├── tests/
+│   ├── test_movies.py
+│
+├── requirements.txt
+├── .env.example
+└── README.md
+
+
+
+
+
+
 
