@@ -1,4 +1,4 @@
-##🎬 MovieVault
+#🎬 MovieVault
 
 **Project OverView**
 MovieVault is a full-stack movie management application built as part of a technical assessment.It provides a simple and structured way to store, retrieve, and manage movie information using a modern backend API and a responsive frontend interface.The project focuses on clean architecture, API design, and frontend–backend integration, following real-world development practices.
@@ -36,6 +36,7 @@ MovieVault solves this by offering:
 
 **✍️ Design Decisions**
 Database Schema: 
+```
 table *movielist* = {
 id: Integer , Primiary_Key = True,
 title: String,
@@ -43,24 +44,36 @@ media_type: String,
 year: Integer,
 rating: Float
 }
+```
 
 📂 Project Structure
 ```
 MovieVault/
 │
-├── app/
-│   ├── main.py
-│   ├── database.py
-│   ├── models.py
-│   ├── schemas.py
-│   ├── routes.py
+├── __pycache__/
 │
+├── frontend/
+│   ├── node_modules/
+│   ├── public/
+│   ├── src/
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── vite.config.js
+│
+├── minenv/
 ├── tests/
 │   ├── test_movies.py
 │
+├── database.py
+├── databasemovie.py
+├── main.py
+├── movie.py
+├── schemas.py
 ├── requirements.txt
-├── .env.example
 └── README.md
+
 ```
 
 
