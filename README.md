@@ -76,6 +76,100 @@ MovieVault/
 
 ```
 
+### Validation Logic
+
+Data integrity is ensured using a combination of schema-level and application-level validation:
+
+- Pydantic models enforce required fields and correct data types
+- Logical constraints are applied, such as validating rating ranges and valid release years
+- API endpoints verify resource existence before update or delete operations
+- Duplicate movie entries are prevented through application-level checks
+
+This approach ensures invalid or inconsistent data never reaches the database.
+
+
+### Solution Approach
+🔄 Data Flow
+ - Client sends a request to the FastAPI endpoint.
+ - Request data is validated using Pydantic schemas.
+ - Business rules and resource existence are checked.
+ - External movie API is called when required.
+ - Validated data is stored or fetched from PostgreSQL.
+ - Response is serialized using Pydantic models.
+ - API returns a structured JSON response with proper status codes.
+
+### How to Run the Project
+
+⚠️ Runs locally on localhost (Docker not used)
+
+## 🔧 Setup
+Frontend React :
+```cd frontend```
+installation of package
+```npm install```
+```npm run dev```
+frontend url: ``` http://localhost:5173```
+
+Backend Python:
+
+Virtual Environment & Dependencies:
+```
+python -m venv minenv
+source minenv/bin/activate   # Windows: minenv\Scripts\activate
+pip install -r requirements.txt
+```
+Create a .env file in the project root.
+```
+EXTERNAL_API_KEY=your_api_key_here
+```
+⚠️ Disclaimer This requires a OMDb API key (Free Version)
+
+▶️ Run Backend Server
+```
+uvicorn main:app --reload
+```
+
+Backend url : ```http://localhost:8000```
+
+### 📡 API Endpoints
+
+## 1️⃣ Create Movie
+
+- Method: POST
+- Endpoint: /movies
+- Body: application/json
+Request:
+<img width="1919" height="1077" alt="image" src="https://github.com/user-attachments/assets/e829edc8-6ee8-47ab-9cc5-29299b725ab6" />
+```
+{
+title: "Interstellar"
+}
+```
+Response:
+Movie added at ID 10
+<img width="1334" height="960" alt="image" src="https://github.com/user-attachments/assets/53963570-43c8-4e0f-abe8-7f857eccde95" />
+
+2️⃣ Get Movie by ID
+
+ - Method: GET
+ - Endpoint: /movies/{id}
+
+3️⃣ Update Movie
+
+ - Method: PUT
+ - Endpoint: /movies/{id}
+ - Body: application/json
+
+4️⃣ Delete Movie
+
+ - Method: DELETE
+ - Endpoint: /movies/{id}
+
+
+
+
+
+
 
 
 
