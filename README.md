@@ -103,11 +103,15 @@ This approach ensures invalid or inconsistent data never reaches the database.
 ⚠️ Runs locally on localhost (Docker not used)
 
 ## 🔧 Setup
-Frontend React :
+Frontend React
 ```cd frontend```
+
 installation of package
+
 ```npm install```
+
 ```npm run dev```
+
 frontend url: ``` http://localhost:5173```
 
 Backend Python:
